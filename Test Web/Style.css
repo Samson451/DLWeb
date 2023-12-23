@@ -1,0 +1,314 @@
+/* CSS for the travel program website */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-image: url("Images/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  margin: 0;
+}
+
+.section p {
+  margin: 0;
+}
+
+.section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section ul li {
+  padding: 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.notes {
+  font-style: italic;
+}
+.image-gallery {
+  display: list-item;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  flex: 0 0 20%; /* Cài đặt kích thước chiếm 20% của container */
+  margin: 5px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+}
+header {
+  width: 100%;
+  height: 160px; /* Adjust the height of the header as needed */
+  overflow: hidden;
+}
+
+header img {
+  width: 160px;
+  height: 16 0px;
+  object-fit: contain;
+  float: left;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-szti{background-color:#00bffa;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-vf9o{background-color:#d5f6ff;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-mxrt{color:#fe0000;font-weight:bold;text-align:center;vertical-align:top}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  width: 49%;
+  margin-bottom: 10px;
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.center-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins' , sans-serif;
+}
+
+.nav{
+  top: 150px;
+  height: 70px;
+  width: 70px;
+  background-color: black;
+  border-radius: 50px;
+  transition: 0.4s ease;
+}
+
+.toggleBox{
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.icon{
+  position: absolute;
+  height: 4px;
+  width: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #c3c3c5;
+  border-radius: 50px ;
+}
+
+.icon::before,.icon::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #c3c3c5;
+  border-radius: 50px ;
+  transition: 0.3s;
+} 
+
+.icon::before{
+  top: 12px;
+}
+
+.icon::after{
+  bottom: 10px; 
+} */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+    z-index: 999;
+}
+.sidebar:hover {
+    width: 260px;
+}
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+.logo img {
+    width: 67px;
+    border-radius: 50%;
+}
+.logo h2 {
+    font-size: 1.30rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+.sidebar:hover .logo h2 {
+    display: block;
+}
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.links li:hover {
+    cursor: pointer;
+    background: #fff;
+}
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+.sidebar:hover .links h4 {
+    display: block;
+}
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+.links li span {
+    padding: 12px 10px;
+}
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.sidebar:hover .links li a {
+    display: block;
+}
+.links .logout-link {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #303036;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.person-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.person-row span {
+    margin: 0 10px;
+}
